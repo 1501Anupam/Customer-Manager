@@ -1,8 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AppComponent } from './app.component';
+import { CardViewComponent } from './card-view/card-view.component';
+import { ListViewComponent } from './list-view/list-view.component';
+import { MapViewComponent } from './map-view/map-view.component';
+import { OrderPlacedComponent } from './order-placed/order-placed.component';
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path:'list', component: ListViewComponent },
+  { path:'map', component: MapViewComponent },
+  { path:'card', component: CardViewComponent },
+  { path:'order', component: OrderPlacedComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
