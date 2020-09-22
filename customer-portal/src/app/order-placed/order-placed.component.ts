@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./order-placed.component.css']
 })
 export class OrderPlacedComponent implements OnInit {
-
+  customers = ['Roman', 'Seth'];
   constructor() { }
 
   ngOnInit(): void {

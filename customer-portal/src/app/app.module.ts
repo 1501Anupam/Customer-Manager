@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { OrderPlacedComponent } from './order-placed/order-placed.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    FontAwesomeModule
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyB8MRJJQmhs4emzywu-MTiWScxxamNlRSo'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
