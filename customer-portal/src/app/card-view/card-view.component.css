@@ -1,0 +1,38 @@
+.card-pos {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.card-body {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+  margin-top: 15px;
+  padding: 0px;
+}
+
+.card-head {
+  background: blue;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cust-image {
+  text-align: center;
+  width: 125px !important;
+  margin: 13px 90px;
+}
+
+.address {
+  text-align: center;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.order {
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
