@@ -11,6 +11,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { CardViewComponent } from './card-view/card-view.component';
 import { ListViewComponent } from './list-view/list-view.component';
+import { MapViewComponent } from './map-view/map-view.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { ListViewComponent } from './list-view/list-view.component';
     HeaderComponent,
     OrderPlacedComponent,
     CardViewComponent,
-    ListViewComponent
+    ListViewComponent,
+    MapViewComponent
   ],
   imports: [
     BrowserModule,
