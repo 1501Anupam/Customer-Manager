@@ -1,0 +1,14 @@
+.items-head {
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.bg-nav {
+    background: blue;
+}
+
+.btn-search {
+    color: white;
+    border: 1px solid white;
+}
