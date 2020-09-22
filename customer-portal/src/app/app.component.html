@@ -1,7 +1,9 @@
 <app-header></app-header>
 <!-- <app-order-placed></app-order-placed> -->
+<app-list-view></app-list-view>
+<app-card-view></app-card-view>
 <div class="container">
-  <h1> {{texto}}</h1>
+  <h4> {{texto}}</h4>
 
   <agm-map [latitude]="lat" [zoom]="zoom" [longitude]="lng">
     <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>

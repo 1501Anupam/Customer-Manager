@@ -1,0 +1,12 @@
+<button type="button" class="btn btn-primary" (click)="getUsers()">Card View</button>
+<div class="row">
+  <div class="col-sm-3 card-pos" style="margin-left: 158px;" *ngFor="let user of data">
+    <div class="card-body">
+      <div class="card-head">{{ user.name.first }}</div>
+      <div class="cust-image"><img src="{{ user.picture.medium }}"></div>
+      <div class="address">Pensacola, Florida</div>
+      <div class="address">{{ user.email }}</div>
+      <div class="order"><a href="">View Orders</a></div>
+    </div>
+  </div>
+</div>

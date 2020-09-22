@@ -1,0 +1,22 @@
+<button type="button" class="btn btn-primary" (click)="getUsers()">Get Users</button>
+<table class="table table-striped custom-table">
+  <thead>
+    <th style="width: 25%;">Name</th>
+    <th style="width: 25%;">Gender</th>
+    <th style="width: 25%;">Email</th>
+    <th style="width: 25%;">Picture</th>
+  </thead>
+  <tbody>
+    <tr
+      *ngFor="let item of data | paginate: {id: 'listing_pagination', itemsPerPage: 10, currentPage: page, totalItems: totalRecords}">
+      <td>{{ item.name.first }}</td>
+      <td>{{ item.gender }}</td>
+      <td>{{ item.email }}</td>
+      <td><img src="{{ item.picture.medium }}"></td>
+    </tr>
+  </tbody>
+  <div>
+    <pagination-controls id="listing_pagination" maxSize="5" directionaLinks="true" (pageChange)="page = $event">
+    </pagination-controls>
+  </div>
+</table>

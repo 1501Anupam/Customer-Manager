@@ -1,0 +1,12 @@
+.custom-table {
+  border: 1px solid;
+  margin: 25px 45px;
+  width: 88%;
+}
+
+a {
+  color: blue;
+  font-weight: 600;
+  background: #fff;
+  border: 1px solid;
+}
