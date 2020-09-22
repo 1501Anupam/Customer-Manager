@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatSort } from '@angular/material/sort';
 import { RandomUsersService } from '../random-users.service';
 
 @Component({
@@ -7,6 +8,7 @@ import { RandomUsersService } from '../random-users.service';
   styleUrls: ['./list-view.component.css']
 })
 export class ListViewComponent implements OnInit {
+  @ViewChild(MatSort, null) sort: MatSort;
   data: Array<any>;
   totalRecords: String;
   page: Number = 1;
