@@ -12,7 +12,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { CardViewComponent } from './card-view/card-view.component';
 import { ListViewComponent } from './list-view/list-view.component';
 import { MapViewComponent } from './map-view/map-view.component';
-import { RouterModule } from '@angular/router';
+import { MatSort } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -29,6 +29,7 @@ import { RouterModule } from '@angular/router';
     FontAwesomeModule,
     NgxPaginationModule,
     HttpClientModule,
+    MatSort,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyB8MRJJQmhs4emzywu-MTiWScxxamNlRSo'
     })
