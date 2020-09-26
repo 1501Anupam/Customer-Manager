@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AddressComponent } from './address/address.component';
 import { AppComponent } from './app.component';
 import { CardViewComponent } from './card-view/card-view.component';
 import { ListViewComponent } from './list-view/list-view.component';
@@ -8,6 +9,7 @@ import { OrderPlacedComponent } from './order-placed/order-placed.component';
 
 
 const routes: Routes = [
+  { path:'address', component:  AddressComponent},
   { path:'list', component: ListViewComponent },
   { path:'map', component: MapViewComponent },
   { path:'card', component: CardViewComponent },
