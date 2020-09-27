@@ -37,6 +37,6 @@ export class AddressComponent implements OnInit {
     {
       username : suggestName
     }
-  )
+  );
   }
 }
