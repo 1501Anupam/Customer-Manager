@@ -13,6 +13,7 @@ import { CardViewComponent } from './card-view/card-view.component';
 import { ListViewComponent } from './list-view/list-view.component';
 import { MapViewComponent } from './map-view/map-view.component';
 import { AddressComponent } from './address/address.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { AddressComponent } from './address/address.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     FontAwesomeModule,
     NgxPaginationModule,
