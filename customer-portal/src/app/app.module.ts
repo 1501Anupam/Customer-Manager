@@ -13,7 +13,8 @@ import { CardViewComponent } from './card-view/card-view.component';
 import { ListViewComponent } from './list-view/list-view.component';
 import { MapViewComponent } from './map-view/map-view.component';
 import { AddressComponent } from './address/address.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveApproachComponent } from './reactive-approach/reactive-approach.component';
 
 @NgModule({
   declarations: [
@@ -23,11 +24,13 @@ import { FormsModule } from '@angular/forms';
     CardViewComponent,
     ListViewComponent,
     MapViewComponent,
-    AddressComponent
+    AddressComponent,
+    ReactiveApproachComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     FontAwesomeModule,
     NgxPaginationModule,
